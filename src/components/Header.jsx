@@ -5,7 +5,7 @@ function Header() {
   return (
     <>
         <section>
-            <img className='headerim' src={headerim} alt="Header Image" />
+            <img className='headerim'id="headerim" src={headerim} alt="Header Image" />
         </section>
         <section id='C'>
             <div className='intro'>

@@ -5,12 +5,12 @@ import "../src/App.css";
 import productData from "../src/data.json"; 
 
 const App = () => {
-  const [balance, setBalance] = useState(1000); // Solde initial
+  const [balance, setBalance] = useState(1000); //J AI CHOISI 1000 EURO COMME SOLDE INITIAL
   const [cart, setCart] = useState([]);
-  const [currentPage, setCurrentPage] = useState("home"); // Gérer la navigation
-  const [products, setProducts] = useState(productData); // Charger les produits depuis le fichier JSON
+  const [currentPage, setCurrentPage] = useState("home");
+  const [products, setProducts] = useState(productData);
 
-  // Ajouter un produit au panier
+ 
   const addToCart = (product) => {
     if (balance >= product.price && product.stock > 0) {
       setCart([...cart, product]);
@@ -21,7 +21,7 @@ const App = () => {
     }
   };
 
-  // Retirer un produit du panier
+  
   const removeFromCart = (product) => {
     setCart(cart.filter(item => item.id !== product.id));
     setBalance(balance + product.price);
@@ -35,7 +35,7 @@ const App = () => {
       {currentPage === "home" && <Home products={products} addToCart={addToCart} />}
       {currentPage === "cart" && <CartPage cart={cart} removeFromCart={removeFromCart} balance={balance} />}
 
-      {/* Bouton de navigation entre les pages */}
+      {/* Bouton de navigation entre les pages grace au curentpage qui va faire en sorte de naviger entre les pages */}
       <button 
         onClick={() => setCurrentPage(currentPage === "home" ? "cart" : "home")}
         className="fixed bottom-4 right-4 bg-blue-500 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-blue-600 transition"

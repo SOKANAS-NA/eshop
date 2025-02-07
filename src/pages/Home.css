@@ -3,8 +3,8 @@
 
 
 body{
-   background-image: url(../image/rough-wall-background-texture.jpg);
-   background-size: contain;
+background-color: #b29881;
+  
 }
 #I{
     font-family: "Dancing Script", serif;
@@ -14,7 +14,7 @@ body{
     font-size: 80px;
 }
 #name{
-    font-family:"Popins";
+    font-family:"Poppins", sans-serif;
     font-size: 30px;
     font-weight: bold;
 }

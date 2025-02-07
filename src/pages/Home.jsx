@@ -9,16 +9,17 @@ const Home = ({ products, addToCart }) => {
       <Nav />
       <Header />
 
-      <h1 id="I" className="text-center text-4xl font-bold my-10">My creation</h1>
+      <h1 id="I" className="text-center text-4xl font-bold my-10">
+        Lovely creations
+      </h1>
 
       <div className="p-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {products.map((product) => (
             <div
-            key={product.id}
-            className="product-card p-4 b-black border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center border-2 border-brown-500 bg-brown-500"
-
-            
+              key={product.id}
+              className="product-card p-4 border-2 border-brown-500 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center 
+              bg-white/30 backdrop-blur-lg"
             >
               <div className="relative flex justify-center items-center mb-2">
                 <img
@@ -37,11 +38,13 @@ const Home = ({ products, addToCart }) => {
                   onClick={() => addToCart(product)}
                   disabled={product.stock === 0}
                   className={`mt-2 px-3 py-1 rounded border-2 transition-colors duration-200 
-                    ${product.stock > 0 
-                      ? 'bg-white text-black border-burlywood hover:bg-blue-200 hover:text-brown' 
-                      : 'bg-red-500 text-white border-red-500 cursor-not-allowed'}`}
+                    ${
+                      product.stock > 0
+                        ? "bg-white text-black border-black hover:bg-blue-200 hover:text-brown"
+                        : "bg-red-500 text-white border-red-500 cursor-not-allowed"
+                    }`}
                 >
-                  {product.stock > 0 ? "Ajouter au panier" : "En rupture"}
+                  {product.stock > 0 ? "Add to your collection" : "En rupture"}
                 </button>
               </div>
             </div>
