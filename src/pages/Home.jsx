@@ -15,8 +15,10 @@ const Home = ({ products, addToCart }) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {products.map((product) => (
             <div
-              key={product.id}
-              className="product-card border-2 border-burlywood p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center"
+            key={product.id}
+            className="product-card p-4 b-black border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center border-2 border-brown-500 bg-brown-500"
+
+            
             >
               <div className="relative flex justify-center items-center mb-2">
                 <img

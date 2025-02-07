@@ -20,12 +20,19 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 8rem;
-    margin-left: 15rem;
+    margin-top: 7rem;
+    margin-left: 6rem;
     font-weight: bolder;
     border: 10px solid black;
     width: 30rem;
     text-align: center;
+    backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+}
+@media (max-width: 768px) {
+   .intro{
+    margin-right: 2rem;
+   }
 }
 
 .intro h1 {

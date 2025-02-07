@@ -3,7 +3,8 @@
 
 
 body{
-    background-color: #eed5b9;
+   background-image: url(../image/rough-wall-background-texture.jpg);
+   background-size: contain;
 }
 #I{
     font-family: "Dancing Script", serif;
