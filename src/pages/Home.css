@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body{
+    background-color: #eed5b9;
+}
+#I{
+    font-family: "Dancing Script", serif;
+    text-align: center;
+    margin-top: 12rem;
+    font-weight: bold;
+    font-size: 80px;
+}
+#name{
+    font-family:"Popins";
+    font-size: 30px;
+    font-weight: bold;
+}
+.t{
+   opacity: 0; 
+}
+.t:hover{
+    opacity: 1;
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px) scale(1.05); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+  }
+  
