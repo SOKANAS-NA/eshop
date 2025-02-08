@@ -2,6 +2,7 @@
 import Nav from "../components/Navbar";
 import Header from "../components/Header";
 import "../pages/Home.css";
+import Footer from "../components/Footer";
 
 const Home = ({ products, addToCart }) => {
   return (
@@ -18,7 +19,7 @@ const Home = ({ products, addToCart }) => {
           {products.map((product) => (
             <div
               key={product.id}
-              className="product-card p-4 border-2 border-brown-500 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center 
+              className="product-card p-4 border-2 border-8 border-black rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center 
               bg-white/30 backdrop-blur-lg"
             >
               <div className="relative flex justify-center items-center mb-2">
@@ -51,6 +52,7 @@ const Home = ({ products, addToCart }) => {
           ))}
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

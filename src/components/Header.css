@@ -2,11 +2,16 @@
 
 
 .headerim {
-    height: 104.1vh;
+   
     width: 100%;
     border-radius: 15px;
     box-shadow: 4px 4px 10px rgba(139, 69, 19, 0.5); 
 }
+@media (max-width: 368px) {
+    #headerim{
+     height: 2rem;
+    }
+ }
 
  
 
