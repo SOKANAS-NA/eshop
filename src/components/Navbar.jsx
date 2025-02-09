@@ -13,7 +13,7 @@ function Nav() {
               <div className='les_link_nav' >
                 <a href="">Acceuil</a>
                 <a href="">Contacte</a>
-                <a href="">A propos</a>
+                <a href="">About us</a>
               </div> 
             <a href=""><img className='le_panier_im' src={lepanier} alt="" /></a>
         </div>

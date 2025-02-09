@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 2rem;
+  max-width: 1200px; /* Ajuste la largeur de la section */
+  margin: 0 auto; /* Centrer la section */
+  padding-top: 4rem;
+  margin-top: 5rem;
+  
+  color: white;
+  border-radius: 10px; /* Pour des coins arrondis */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre portée pour donner de la profondeur */
+  transition: transform 0.3s ease; /* Animation fluide pour l'effet hover */
+}
+
+.about:hover {
+  transform: scale(1.02);  /* Effet de zoom léger au survol */
+}
+
+/* Titre */
+.about h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+}
+
+/* Texte */
+.about p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: rgb(27, 27, 52);
+  text-align: justify;
+  font-family: 'Poppins', serif;
+}
+
+.about p:last-of-type {
+  margin-top: 50px; /* Plus d'espacement entre les deux paragraphes */
+}
+
+/* Image à droite */
+.about img {
+  max-width: 90%; /* Limite la taille de l'image */
+  height: auto;
+  margin-left: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about {
+    flex-direction: column; /* Dispose le texte et l'image en colonne sur les petits écrans */
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .about img {
+    max-width: 90%; /* L'image prend plus de place sur les petits écrans */
+    margin: 1rem 0;
+  }
+
+  .about h3 {
+    font-size: 1.5rem; /* Réduit la taille du titre sur petits écrans */
+  }
+
+  .about p {
+    font-size: 1rem; /* Réduit la taille du texte */
+  }
+}
+
+@media (max-width: 400px) {
+  .about {
+    margin-top: 2rem; /* Ajuste le marging top sur très petits écrans */
+  }
+}
