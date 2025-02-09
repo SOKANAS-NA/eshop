@@ -16,7 +16,7 @@ const Aboutus = () => {
 
   <div className="contact">
     <div className="contact-section">
-      <h1>CONTACT US!</h1>
+      
       <h1>Maison Nassiri</h1>
       <p>
         <strong>Adresse :</strong>
