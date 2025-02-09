@@ -3,6 +3,10 @@ import Home from "./pages/Home";
 import CartPage from "./components/CartePage";
 import "../src/App.css";
 import productData from "../src/data.json";
+import Navbar from "./components/Navbar";
+import Aboutus from "./components/Aboutus";
+import About from "./pages/About";
+
 
 const App = () => {
   //GESTION DE LA DYNAMIQUE DES PAGES VIA USESTATE
@@ -12,6 +16,12 @@ const App = () => {
   const [products, setProducts] = useState(productData); // PRODUITS QUE J AI CREE EN FORME DE TABLEAU INCLUANT LES OBJECTS PROPRES POUR CHAQUE CARTE ( dans data.json)
 
   // Fonction pour ajouter un produit au panier: product est transmis au component enfant afin qu il soit affiche
+  //J AI CREE L ANCRE POUR ACCEDER A CONTACT et a about us je voulais creer des pages a part avec le curentpage mais je me suis un peu perdue alors j ai preferer mettre des ancres
+  <Navbar>
+    <About></About>
+    <Aboutus></Aboutus>
+    
+  </Navbar>
   const addToCart = (product) => {
     if (balance >= product.price && product.stock > 0) { //VERIFICATION QUE LE SOLDE DE L UTILISATEUR EST DISPONIBLE ET LE STOCK AUSSI
       setCart([...cart, product]); // Ajout du produit au panier
@@ -55,7 +65,9 @@ const App = () => {
       >
         {currentPage === "home" ? `see basket (${cartItemCount})` : "Retour"} {/* Affichage dynamique en fonction de la page actuelle */}
       </button> {/* cartItemCount est défini plus haut afin d'initialiser le nombre d'articles dans le panier// avec la condition ternaire : si on est dans la page panier, le bouton indique "Retour", sinon, dans la page d'accueil, il indique "see basket" pour afficher le panier. */}
+    
     </div>
+   
   );
 };
 

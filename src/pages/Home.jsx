@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import "../pages/Home.css";
 import Footer from "../components/Footer";
 import About from "./About";
+import Aboutus from "../components/Aboutus";
 //HOME EST LA PAGE CREE PÄR DEFAUT QUI CONTIENT TOUT LE CONTENU ESSENITEL POUR L UTLISATEUR C EST LA OU LES CARTES SONT DISPOSEE AVEC LEUR VALEUR 
 //PRODUCTS AVEC UN s EST UN PROPS QUI VA ETRE UTILSE DANS LA METHODE .MAP AFIN DE DISTRIBUER CHAQUE PRODUCT A SA CARTE ADEQUATE ET EST DONC UTLISE AFIN DE GENERER DYNAIQUEMENT L AFFICHAGE DES PRODUITS. IL N EST PAS MODIFIE DIRECTEMENT DANS HOME CAR APP.JSX GERE CELA
 
@@ -57,6 +58,7 @@ const Home = ({ products, addToCart }) => {
           ))}
         </div>
       </div>
+      <Aboutus></Aboutus>
       <Footer></Footer>
     </div>
   );

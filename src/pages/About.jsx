@@ -2,6 +2,7 @@ import "../pages/About.css";
 
 const About = () => {
   return (
+    <div id="Aboutt">
     <div className="about-container">
       {/* Section "about" avec texte et image */}
       <div className="about">
@@ -25,6 +26,7 @@ const About = () => {
           <img src="src/image/tailleur-creatif-travaillant-atelier_23-2148970728.jpg" alt="Sac de luxe" />
         </div>
       </div>
+    </div>
     </div>
   );
 };
