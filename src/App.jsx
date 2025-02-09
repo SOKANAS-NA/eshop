@@ -6,7 +6,7 @@ import productData from "../src/data.json";
 
 const App = () => {
   //GESTION DE LA DYNAMIQUE DES PAGES VIA USESTATE
-  const [balance, setBalance] = useState(10000); // Solde initial de 1000€
+  const [balance, setBalance] = useState(50000); // Solde initial de 1000€
   const [cart, setCart] = useState([]); // Panier vide au début
   const [currentPage, setCurrentPage] = useState("home"); //PAGE D ACCUEIL PAR DEFAUT
   const [products, setProducts] = useState(productData); // PRODUITS QUE J AI CREE EN FORME DE TABLEAU INCLUANT LES OBJECTS PROPRES POUR CHAQUE CARTE ( dans data.json)

@@ -2,63 +2,63 @@
     {
       "id": 1,
       "name": "BIRKIN",
-      "price": 150,
+      "price": 1500,
       "stock": 5,
       "image": "src/image/image1.webp"
     },
     {
       "id": 2,
       "name": "KELLY",
-      "price": 200,
+      "price": 2000,
       "stock": 3,
       "image": "src/image/IMAGEé.webp"
     },
     {
       "id": 3,
       "name": "CONSTANCE",
-      "price": 250,
+      "price": 2500,
       "stock": 2,
       "image": "src/image/image3.webp"
     },
     {
       "id": 4,
       "name": "EVELYNE",
-      "price": 300,
+      "price": 3000,
       "stock": 1,
       "image": "src/image/IMAGE4.webp"
     },
     {
       "id": 5,
       "name": "PICOTIN",
-      "price": 180,
+      "price": 1800,
       "stock": 4,
       "image": "src/image/IMAGE5.webp"
     },
     {
       "id": 6,
       "name": "LINDY",
-      "price": 220,
+      "price": 2200,
       "stock": 3,
       "image": "src/image/IMAGE6.webp"
     },
     {
       "id": 7,
       "name": "BOLIDE",
-      "price": 350,
+      "price": 3500,
       "stock": 2,
       "image": "src/image/IMAGE7.webp"
     },
     {
       "id": 8,
       "name": "GARDEN PARTY",
-      "price": 280,
+      "price": 2800,
       "stock": 5,
       "image": "src/image/IMAGE8.webp"
     },
     {
       "id": 9,
       "name": "DELLA CALLE",
-      "price": 230,
+      "price": 2300,
       "stock": 4,
       "image": "src/image/IMAGE11.webp"
     }
